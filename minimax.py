@@ -1,6 +1,5 @@
 from google.appengine.api import urlfetch
 import urllib
-import logging
 import json
 
 
@@ -34,8 +33,6 @@ class MiniMax:
             "username": self.username,
             "password": self.password
         }
-
-        logging.info("client_secret: " + self.client_secret)
 
         form_data = urllib.urlencode(params)
 
